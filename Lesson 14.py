@@ -74,13 +74,41 @@ def printListInLine(_list: list):
 # boo()
 # print(a)
 
-printLine('$', 30)
-printLine('#')
-printLine()
+# printLine('$', 30)
+# printLine('#')
+# printLine()
 
 def add(a, b, c=0, d=0):
     return a + b + c + d
 
-print(add(1,2,3,4))
-print(add(1,2,3))
-print(add(1,2))
+# print(add(1,2,3,4))
+# print(add(1,2,3))
+# print(add(1,2))
+
+
+
+a = int(input("a="))
+b = int(input("b="))
+c = int(input("c="))
+d = int(input("d="))
+e = int(input("e="))
+def chislo():
+    if a <= b and a <= c and a <= d and a <= e:
+        print(a)
+
+chislo()
+
+
+def digitCount(number: float):
+    num = number
+    digit = 0
+    while number > 10:
+        digit += 1
+        number //= 10
+    else:
+        digit += 1
+        if number % 10 == 0:
+            digit += 1
+    print(f"The amount of digit in {num} is {digit}.")
+
+digitCount(100)
